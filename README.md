@@ -2,7 +2,25 @@
 
 a static site for the civic-spark.ca event
 
-**Run the Local Server**
+## Setup
+
+1. **Install Ruby and Bundler**
+
+Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed. Then install Bundler:
+
+```sh
+gem install bundler
+```
+
+2. **Install Dependencies**
+
+Navigate to the project directory and install the required gems:
+
+```sh
+bundle install
+```
+
+3. **Run the Local Server**
 
 Start a local development server:
 
