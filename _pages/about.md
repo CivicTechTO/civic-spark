@@ -21,7 +21,7 @@ redirect_from: /get-involved
 
 ## Our Why
 
-We envision a vibrant, people-centered civic ecosystem where communities use technology, organizing, and design to tackle real-world challenges — collaboratively, equitably, and creatively.
+<p class="lead">We envision a vibrant, people-centered civic ecosystem where communities use technology, organizing, and design to tackle real-world challenges — collaboratively, equitably, and creatively.</p>
 
 For us Civic Spark is a space to:
 
