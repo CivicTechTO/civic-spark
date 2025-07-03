@@ -16,4 +16,6 @@ Volunteering: [volunteers@civic-spark.com](mailto:volunteers@civic-spark.com)
 
 ---
 
+<article>
 {% include signup-form.html %}
+</article>

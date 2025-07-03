@@ -4,4 +4,4 @@ title: Conference
 permalink: /conference
 ---
 
-init
+coming soon.

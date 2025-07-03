@@ -54,6 +54,6 @@ If you have any specific accessibility needs or questions, please don’t hesita
 
 ### Supporting Information
 
-- [Visit the Myhal Centre website](https://www.engineering.utoronto.ca/myhal-centre-for-engineering-innovation-entrepreneurship/){% include ext-arrow.html %}
-- [See Parking Information](https://transportation.utoronto.ca/parking-map-rates/){% include ext-arrow.html %}
-- [Google Maps Directions](https://www.google.com/maps/place/55+St+George+St,+Toronto,+ON+M5S+0C9,+Canada){% include ext-arrow.html %}
+- [Visit the Myhal Centre website](https://www.engineering.utoronto.ca/myhal-centre-for-engineering-innovation-entrepreneurship/){:target="\_blank"}{% include ext-arrow.html %}
+- [See Parking Information](https://transportation.utoronto.ca/parking-map-rates/){:target="\_blank"}{% include ext-arrow.html %}
+- [Google Maps Directions](https://www.google.com/maps/place/55+St+George+St,+Toronto,+ON+M5S+0C9,+Canada){:target="\_blank"}{% include ext-arrow.html %}
