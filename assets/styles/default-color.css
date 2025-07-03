@@ -159,7 +159,7 @@
   --pico-form-element-focus-color: var(--pico-primary-focus);
 }
 
-@media only screen and (prefers-color-scheme: dark) {
+/* @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]),
   :host(:not([data-theme])) {
     color-scheme: dark;
@@ -461,7 +461,7 @@
     [role="button"]
   ):not(.outline)::before {
   filter: brightness(0);
-}
+} */
 
 progress,
 [type="checkbox"],
