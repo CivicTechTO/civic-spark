@@ -1,4 +1,46 @@
-<footer>
-{% include signup-form.html %}
-<p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+<footer class="footer container">
+  <div>
+    {% include logoform.html gray='true' %}
+    <p>​Share&nbsp;your&nbsp;story. Spark&nbsp;connection. Shape&nbsp;what’s&nbsp;next.</p>
+    </div>
+  <div class="grid">
+    <div>
+
+    <aside class="grid">
+      <nav>
+        <ul>
+          <li>General Information</li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/sponsors">Sponsors</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/location">Event Location</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>Programming</li>
+          <li><a href="/conference">Conference</a></li>
+          <li><a href="/unconference">Unconference</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>Media</li>
+          <li><a href="/media-kit">Media Kit</a></li>
+
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>Take Action</li>
+          <li><a href="{{ site.data.links.registration }}" target="_blank">Attend{% include ext-arrow.html %}</a></li>
+          <li><a href="{{ site.data.links.volunteer }}" target="_blank">Volunteer{% include ext-arrow.html %}</a></li>
+        </ul>
+      </nav>
+    </aside>
+    </div>
+
+    <!-- {% include signup-form.html %} -->
+  </div>
+  <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
 </footer>

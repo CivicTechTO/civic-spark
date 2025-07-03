@@ -1,0 +1,182 @@
+/*
+ * 
+ * GENERAL
+ *
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.svg-include {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+ * 
+ * LAYOUT 
+ *
+ */
+
+/*
+ * 
+ * BREAKPOINTS
+ *
+ */
+
+.grid-blade {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 576px) {
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-blade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+  }
+  .reversed {
+    grid-template-areas: "text image";
+  }
+  .inset-section {
+    max-width: 860px;
+    margin: 4rem auto;
+  }
+  .text-area {
+    padding: 2rem 1rem;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
+
+.image-area {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-area {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  vertical-align: middle;
+  justify-content: center;
+  text-align: left;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cta-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+/*
+ * 
+ * TYPOGRAPHY 
+ *
+ */
+
+.lead {
+  font-size: 139%;
+  line-height: 1.5;
+}
+
+.external-arrow {
+  font-family: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
+
+/*
+ * 
+ * WORDMARK
+ *
+ */
+
+.logoform {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.spark {
+  height: 2rem;
+  width: auto;
+  display: inline-block;
+}
+
+.wordmark {
+  font-family: "Bitter", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--cust-black);
+}
+
+/*
+ * 
+ * COLORIZATION 
+ *
+ */
+
+.yellow-card-bg {
+  background-color: var(--cust-yellow-pale);
+  border-bottom: 0.75rem solid var(--cust-yellow);
+}
+
+.magenta-card-bg {
+  background-color: var(--cust-magenta-pale);
+  color: var(--cust-black);
+  border-bottom: 0.75rem solid var(--cust-magenta);
+}
+
+.magenta-card-bg * {
+  color: var(--cust-black);
+  fill: var(--cust-black);
+}
+
+.colorized-white {
+  color: var(--cust-white);
+}
+
+.colorized-white path {
+  fill: var(--cust-white);
+}
+
+.colorized-magenta {
+  color: var(--cust-magenta);
+}
+
+.colorized-magenta path {
+  fill: var(--cust-magenta);
+}
+
+.colorized-orange {
+  color: var(--cust-orange-dim);
+}
+
+.colorized-orange path {
+  fill: var(--cust-orange);
+}

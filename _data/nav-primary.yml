@@ -1,0 +1,31 @@
+nav:
+  - title: Register Now
+    url: https://lu.ma/civic-spark
+    external: true
+
+sub_nav_title: Menu
+
+sub_nav:
+  - title: Overview
+    url: /
+    type: relative
+
+  - title: Conference
+    url: /conference
+    type: relative
+
+  - title: Unconference
+    url: /unconference
+    type: relative
+
+  - title: About Us
+    url: /about-us
+    type: relative
+
+  - title: Sponsors
+    url: /sponsors
+    type: relative
+
+  - title: Location
+    url: /location
+    type: relative

@@ -1,0 +1,48 @@
+{% comment %}
+  Dynamic section.html include
+  Usage example:
+  {% include section.html 
+      type="hero" 
+      title="Welcome!" 
+      subtitle="This is the hero section." 
+      background="hero-bg.jpg" 
+      cta_text="Learn More" 
+      cta_link="/about" 
+  %}
+  Add more types as needed.
+{% endcomment %}
+
+{% case include.type %}
+  {% when "hero" %}
+    <section class="hero">
+      <article class="hero-card grid">
+        <div>
+          {% include svg-initial.svg %}
+        </div>
+        <div class="hero-text">
+          <h1>{{ include.title }}</h1>
+          {% if include.subtitle %}
+            <p>{{ include.subtitle }}</p>
+          {% endif %}
+          {% if include.cta_text and include.cta_link %}
+          <div>
+            <a role="button" href="{{ include.cta_link }}" class="secondary">{{ include.cta_text }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    </section>
+  {% when "feature" %}
+    <section class="feature">
+      <h2>{{ include.title }}</h2>
+      <p>{{ include.description }}</p>
+      {% if include.image %}
+        <img src="{{ include.image }}" alt="{{ include.title }}">
+      {% endif %}
+    </section>
+  {% else %}
+    <section>
+      <h2>{{ include.title }}</h2>
+      <p>{{ include.content }}</p>
+    </section>
+{% endcase %}

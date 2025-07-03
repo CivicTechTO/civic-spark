@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Civic Spark 💥
+title: Civic Spark
 email: info@civic-spark.com
 description: >- # this means to ignore newlines until "baseurl:"
   Civic Spark is a two day conference and unconference bringing together organizers, innovators, and community builders creating a more equitable public life – to share what works, name what doesn’t, and spark grounded, meaningful action.
@@ -27,10 +27,13 @@ url: "https://civic-spark.com" # the base hostname & protocol for your site, e.g
 
 github_username: civictechto
 
+include: ["_pages"]
+
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
