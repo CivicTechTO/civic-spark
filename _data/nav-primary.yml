@@ -6,16 +6,16 @@ nav:
 sub_nav_title: Menu
 
 sub_nav:
+  - title: About Us
+    url: /about-us
+    type: relative
+
   - title: Conference
     url: /conference
     type: relative
 
   - title: Unconference
     url: /unconference
-    type: relative
-
-  - title: About Us
-    url: /about-us
     type: relative
 
   - title: Sponsors
