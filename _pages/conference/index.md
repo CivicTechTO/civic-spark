@@ -3,6 +3,7 @@ layout: page
 title: Conference | Overview
 description: Saturday, August 16, 2025 – Talks, sessions, and shared lessons from the field.
 permalink: /conference/
+redirect_from: /conference
 ---
 
 {% include conference-subnav.html%}
