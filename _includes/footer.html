@@ -1,40 +1,56 @@
-<footer class="footer container">
-  <div>
+<style>
+.footer {
+  background-color: var(--cust-yellow-pale);
+  padding: 2rem 1rem;
+}
+.footer-nav *{
+  color: var(--cust-black);
+}
+
+
+@media (max-width: 767px) {
+  .footer-nav{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {}
+
+</style>
+<footer class="footer">
+  <div class="container">
     {% include logoform.html gray='true' %}
     <p>​Share&nbsp;your&nbsp;story. Spark&nbsp;connection. Shape&nbsp;what’s&nbsp;next.</p>
-    </div>
   <div class="grid">
     <div>
-
-    <aside class="grid">
+    <aside class="grid footer-nav">
       <nav>
         <ul>
-          <li>General Information</li>
+          <li><strong>General Information</strong></li>
           <li><a href="{{ '/about-us' | relative_url }}">About Us</a></li>
           <li><a href="{{ '/sponsors' | relative_url }}">Sponsors</a></li>
-          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
           <li><a href="{{ '/location' | relative_url }}">Event Location</a></li>
         </ul>
       </nav>
       <nav>
         <ul>
-          <li>Programming</li>
+          <li><strong>Programming</strong></li>
           <li><a href="{{ '/conference' | relative_url }}">Conference</a></li>
           <li><a href="{{ '/unconference' | relative_url }}">Unconference</a></li>
         </ul>
       </nav>
       <nav>
         <ul>
-          <li>Media</li>
+          <li><strong>Media</strong></li>
             <li><a href="{{ '/media-kit' | relative_url }}">Media Kit</a></li>
 
         </ul>
       </nav>
       <nav>
         <ul>
-          <li>Take Action</li>
+          <li><strong>Take Action</strong></li>
           <li><a href="{{ site.data.links.registration }}" target="_blank">Attend{% include ext-arrow.html %}</a></li>
           <li><a href="{{ site.data.links.volunteer }}" target="_blank">Volunteer{% include ext-arrow.html %}</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
         </ul>
       </nav>
     </aside>
@@ -44,4 +60,5 @@
   </div>
   <br/>
   <p><small>{{ site.title }} &emsp;·&emsp; August 16 & 17, 2025 &emsp;·&emsp; Myhal Centre, University of Toronto &emsp;·&emsp; <a href="{{ site.data.links.codeofconduct }}" target="_blank">code of conduct{% include ext-arrow.html %}</a> &emsp;·&emsp; <a href="{{ site.data.links.privacy }}" target="_blank">privacy policy{% include ext-arrow.html %}</a></small></p>
+  </div>
 </footer>

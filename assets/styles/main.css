@@ -135,6 +135,24 @@ section {
   color: var(--cust-black);
 }
 
+@media (max-width: 767px) {
+  nav .logoform {
+    gap: 0.125rem;
+    margin-top: 0.5rem;
+  }
+
+  nav .spark {
+    height: 2rem;
+    width: auto;
+  }
+  nav .wordmark {
+    font-family: "Bitter", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cust-black);
+  }
+}
+
 /*
  * 
  * COLORIZATION 

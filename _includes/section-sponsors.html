@@ -1,0 +1,44 @@
+<section class="container">
+  <hr>
+  <p>Presenting Sponsors</p>
+  <style>
+    .sponsors {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr 0.5fr;
+      gap: 1.5rem;
+      justify-items: center;
+      align-items: center;
+      margin: 1rem 0 2rem 0;
+    }
+    .sponsors img {
+      width: 100%;
+      filter: grayscale(100%);
+    }
+    .sponsors img:hover {
+      filter: none;
+    }
+    .sponsors a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 767px) {
+      .sponsors {
+        grid-template-columns: auto;
+        gap: 2rem;
+        margin: 3rem 0 3rem 0;
+      } 
+      .sponsors img{
+        max-width: 60vw;
+      }
+    }
+    @media (min-width: 1024px) {}
+  </style>
+  <div class="sponsors">
+    {% for sponsor in site.data.sponsors %}
+      {% if sponsor.level == "presenting_partner" %}
+        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}">
+        </a>
+      {% endif %}
+    {% endfor %}
+</section>

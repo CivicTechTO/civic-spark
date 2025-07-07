@@ -8,25 +8,25 @@
       </li>
     </ul>
     <ul>
+      {% if site.data.nav-primary.sub_nav %}
+      <li>
+        <details class="dropdown">
+          <summary>
+            {{ site.data.nav-primary.sub_nav_title }}
+          </summary>
+          <ul dir="rtl">
+            {% for item in site.data.nav-primary.sub_nav %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+      {% endif %}
       {% for item in site.data.nav-primary.nav %}
-        <li>
-          <button class="primary" onclick="window.open('{{ item.url }}', '_blank')">{{ item.title }}{% if item.external %}{% include ext-arrow.html %}{% endif %}</button>
-        </li>
+      <li>
+        <button class="contrast" onclick="window.open('{{ item.url }}', '_blank')">{{ item.title }}{% if item.external %}{% include ext-arrow.html %}{% endif %}</button>
+      </li>
       {% endfor %}
-    {% if site.data.nav-primary.sub_nav %}
-    <li>
-      <details class="dropdown">
-        <summary>
-          {{ site.data.nav-primary.sub_nav_title }}
-        </summary>
-        <ul dir="rtl">
-          {% for item in site.data.nav-primary.sub_nav %}
-          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </details>
-    </li>
-    {% endif %}
   </ul>
   </nav>
 </header>
