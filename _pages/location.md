@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Location
-permalink: /location
+permalink: /location/
+redirect_from: /location
 ---
 
 ## Venue

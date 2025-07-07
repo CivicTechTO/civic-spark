@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Us
-permalink: /about-us
+permalink: /about-us/
 redirect_from: /get-involved
 ---
 

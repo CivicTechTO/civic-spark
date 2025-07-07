@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Contact
-permalink: /contact
+permalink: /contact/
+redirect_from: /contact
 ---
 
 ## General Contact
