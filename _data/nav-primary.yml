@@ -7,21 +7,21 @@ sub_nav_title: Menu
 
 sub_nav:
   - title: About Us
-    url: /about-us
+    url: /about-us/
     type: relative
 
   - title: Conference
-    url: /conference
+    url: /conference/
     type: relative
 
   - title: Unconference
-    url: /unconference
+    url: /unconference/
     type: relative
 
   - title: Sponsors
-    url: /sponsors
+    url: /sponsors/
     type: relative
 
   - title: Location
-    url: /location
+    url: /location/
     type: relative
