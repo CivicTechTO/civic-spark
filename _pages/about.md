@@ -56,7 +56,7 @@ For us Civic Spark is a space to:
         <p>This is a volunteer-powered event — and we’d love your help!</p>
       </hgroup>
       <p>From day-of logistics to helping review sessions, Civic Spark runs on community energy. If you want to lend your time and skills (or just be part of the behind-the-scenes team), we’d love to have you.</p>
-      <p>Sign up to volunteer here:  <a href="mailto:volunteers@civic-spark.com">volunteers@civic-spark.com</a></p>
+      <p>Sign up to volunteer here:  <a href="https://docs.google.com/forms/d/e/1FAIpQLScECkfT8Iz6cs3REmHJb3s7Pn6SrFKIVajLB75rJVwwEbq7kQ/viewform">Volunteer Form{%include ext-arrow.html%}</a></p>
     </article>
     </div>
   </div>
