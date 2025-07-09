@@ -12,12 +12,6 @@ Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installatio
 gem install bundler
 ```
 
-If you see that the version of bundler installed is lower than 2.6.9, you may need to update your bundler version:
-
-```sh
-bundle update --bundler
-```
-
 2. **Install Dependencies**
 
 Navigate to the project directory and install the required gems:
