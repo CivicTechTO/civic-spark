@@ -13,7 +13,7 @@
   --pico-font-weight: 400;
   --pico-font-size: 100%;
   --pico-text-underline-offset: 0.125rem;
-  --pico-border-radius: 0.625rem;
+  --pico-border-radius: 0.6em;
   --pico-border-width: 0.125rem;
   --pico-outline-width: 0.125rem;
   --pico-transition: 0.2s ease-in-out;
@@ -253,9 +253,13 @@ details summary[role="button"]:not(.outline)::after {
   filter: brightness(0) invert(1);
 }
 
-[role="button"],
-button {
-  --pico-font-weight: 600;
+button, [type=submit], [type=button], [role=button] {
+  --pico-font-weight: 500;
+}
+
+:is(button, [type=submit], [type=button], [role=button]).outline {
+  color: var(--cust-black);
+  background-color: var(--cust-white);
 }
 
 /* custom large button */

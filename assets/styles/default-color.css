@@ -29,7 +29,7 @@
   --pico-primary-hover-background: var(--cust-magenta-pale);
   --pico-primary-hover-border: var(--pico-primary-hover-background);
   --pico-primary-hover-underline: var(--pico-primary-hover);
-  --pico-primary-focus: var(--cust-yellow-pale);
+  --pico-primary-focus: var(--pico-primary);
   --pico-primary-inverse: var(--cust-white);
   --pico-secondary: var(--cust-orange);
   --pico-secondary-background: var(--cust-orange);
@@ -70,7 +70,7 @@
   --pico-del-color: rgb(136, 56.5, 53);
   --pico-blockquote-border-color: var(--pico-muted-border-color);
   --pico-blockquote-footer-color: var(--pico-muted-color);
-  --pico-button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --pico-button-box-shadow: var(--pico-group-box-shadow);
   --pico-button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   --pico-table-border-color: var(--pico-muted-border-color);
   --pico-table-row-stripped-background-color: rgba(111, 120, 135, 0.0375);
