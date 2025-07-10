@@ -12,6 +12,8 @@ Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installatio
 gem install bundler
 ```
 
+If you find this command installs a version of bundler older than 2.6.9, you are likely using an obsolete version of Ruby. If you are using MacOS, the system Ruby version is too old to install the latest bundler, and it will fail to install the required gems. You will need to [install a newer version of ruby](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/).
+
 2. **Install Dependencies**
 
 Navigate to the project directory and install the required gems:
