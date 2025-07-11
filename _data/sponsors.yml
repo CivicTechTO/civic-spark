@@ -1,34 +1,41 @@
+- title: Civic Tech Toronto
+  url: https://civictech.ca
+  logo: civic-tech-toronto-logo.png
+  level: organizing_partner
+  description: comming soon.
+
 - title: Centre for Analytics & Artificial Intelligence Engineering (CARTE)
   url: https://carte.utoronto.ca
   logo: carte-logo.png
-  level: venue_partner
+  level: organizing_partner
+  description: comming soon.
 
 - title: 1RG
   url: https://1rg.space
   logo: 1rg-logo.png
   level: organizing_partner
+  description: comming soon.
 
-- title: Civic Tech Toronto
-  url: https://civictech.ca
-  logo: civic-tech-toronto-logo.png
-  level: organizing_partner
+- title: Open Data – The City of Toronto
+  url: https://open.toronto.ca
+  logo: Toronto Lockup Transparent.png
+  level: presenting_sponsor
+  description: comming soon.
+
+- title: The Toronto Star
+  url: https://www.thestar.com
+  logo: Toronto-Star-Logo.svg
+  level: presenting_sponsor
+  description: comming soon.
+
+- title: Bloom Works
+  url: https://bloomworks.digital
+  logo: bloom.svg
+  level: major_sponsor
+  description: comming soon.
 
 - title: Code for Canada
   url: https://codefor.ca
   logo: code-for-canada-logo.png
-  level: BEN_TO_DEFINE
-
-- title: The City of Toronto
-  url: https://www.toronto.ca
-  logo: toronto.png
-  level: presenting_partner
-
-- title: Open Data Toronto
-  url: https://open.toronto.ca
-  logo: open-data.jpg
-  level: presenting_partner
-
-- title: The Toronto Star
-  url: https://www.thestar.com
-  logo: StarRibbonLogo-B&W.png
-  level: presenting_partner
+  level: supporting_sponsor
+  description: comming soon.

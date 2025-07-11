@@ -4,7 +4,7 @@
   <style>
     .sponsors {
       display: grid;
-      grid-template-columns: 2fr 1fr 2fr 0.5fr;
+      grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       justify-items: center;
       align-items: center;
@@ -17,8 +17,9 @@
     .sponsors img:hover {
       filter: none;
     }
-    .sponsors a {
+    .sponsors a, .textsponsor {
       text-decoration: none;
+      color: inherit;
     }
 
     @media (max-width: 767px) {
@@ -35,10 +36,21 @@
   </style>
   <div class="sponsors">
     {% for sponsor in site.data.sponsors %}
-      {% if sponsor.level == "presenting_partner" %}
+      {% if sponsor.level == "presenting_sponsor" %}
         <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
           <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}">
         </a>
       {% endif %}
     {% endfor %}
+    </div>
+    <div>
+      <p>
+        Major and supporting sponsors:&ensp;
+        {% assign major_supporting = site.data.sponsors | where_exp: "s", "s.level == 'major_sponsor' or s.level == 'supporting_sponsor'" %}
+        {% for sponsor in major_supporting %}
+          <a class="textsponsor" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">{{ sponsor.title }}</a>
+          {% unless forloop.last %} • {% endunless %}
+        {% endfor %}<br/>
+      <a href="{{ '/sponsors' | relative_url}}">Learn more about our sponsors</a></p>
+    </div>
 </section>

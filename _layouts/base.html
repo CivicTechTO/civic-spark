@@ -21,7 +21,9 @@
   <main role="main" id="main-content" class="container" tabindex="-1">
     {{ content }}
   </main>
-  {% include section-sponsors.html %}
+  {% unless page.hide_sponsors %}
+    {% include section-sponsors.html %}
+  {% endunless %}
   {% include footer.html %}
 </body>
 </html>
