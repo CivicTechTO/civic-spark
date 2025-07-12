@@ -30,16 +30,44 @@ For us Civic Spark is a space to:
 - Celebrate what’s working, and name what’s not.
 - Push the civic tech movement forward — with values at the core.
 
+<style>
+.partner-lists{
+  display: grid; 
+  gap: 1rem; 
+  grid-template-columns: 1fr;
+  }
+.partner-logo{height: 4rem; object-fit: contain;filter: grayscale(100%);}
+@media (max-width: 767px) {
+  .partner-logos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+
+<div class="organizing-partners">
+  <h3>Civic Spark is organized by</h3>
+  <div class="partner-lists">
+    {% for sponsor in site.data.sponsors %}
+      {% if sponsor.level == "organizing_partner" %}
+        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.title }}">
+          <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}" class="partner-logo">
+        </a>
+        {{ sponsor.description }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
 <hr/>
 
 <section id="get-involved">
-  <div class="grid grid-blade reversed">
     <div class="text-area">
     <H2>Get Involved</H2>
-    <p>We’re grateful to be working alongside a growing network of community organizations, institutions, and supporters who share our commitment to the public good.</p>
-    <p>Civic Spark is built by a community of volunteers — and we’re looking for partners, collaborators, and supporters to help bring it to life. Whether you want to shape the program, support the community, or help make it all run smoothly, there’s a role for you.</p>
+    <p class="lead">We’re grateful to be working alongside a growing network of community organizations, institutions, and supporters who share our commitment to the public good.</p>
+    <p class="lead">Civic Spark is built by a community of volunteers — and we’re looking for partners, collaborators, and supporters to help bring it to life. Whether you want to shape the program, support the community, or help make it all run smoothly, there’s a role for you.</p>
     </div>  
-    <div>
+  <div class="grid">
     <article>
       <!-- <div class="image-area"></div> -->
       <hgroup>
@@ -47,7 +75,7 @@ For us Civic Spark is a space to:
         <p>Support the ecosystem, not just the event.</p>
       </hgroup>
       <p>We’re seeking values-aligned sponsors who believe in community-powered innovation, public good tech, and civic collaboration. Sponsorship helps us keep the event accessible, support grassroots participation, and celebrate 10 years of Civic Tech Toronto.</p>
-      <p>Want to partner with us? Let’s talk: <a href="mailto:sponsorship@civic-spark.com">sponsorship@civic-spark.com</a></p>
+      <p>Want to partner with us? <br/>Let’s talk: <a href="mailto:sponsorship@civic-spark.com">sponsorship@civic-spark.com</a></p>
     </article>
     <article>
       <!-- <div class="image-area"></div> -->
@@ -59,5 +87,4 @@ For us Civic Spark is a space to:
       <p>Sign up to volunteer here:  <a href="https://docs.google.com/forms/d/e/1FAIpQLScECkfT8Iz6cs3REmHJb3s7Pn6SrFKIVajLB75rJVwwEbq7kQ/viewform">Volunteer Form{%include ext-arrow.html%}</a></p>
     </article>
     </div>
-  </div>
 </section>
