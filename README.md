@@ -1,6 +1,6 @@
-# civic-spark.ca
+# civic-spark
 
-a static site for the civic-spark.ca event
+a static site for the civic-spark event
 
 ## Setup
 
