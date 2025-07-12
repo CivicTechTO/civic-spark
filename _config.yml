@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A conference + unconference for organizers, innovators, and community builders interested in creating a better future of public life.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://civic-spark.com" # the base hostname & protocol for your site, e.g. http://example.com
+image: "/assets/images/social_card.jpg"
 
 github_username: civictechto
 
