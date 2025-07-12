@@ -9,7 +9,7 @@
     </ul>
     <ul>
       {% if site.data.nav-primary.sub_nav %}
-      <li>
+      <li class="show-mobile">
         <details class="dropdown">
           <summary>
             {{ site.data.nav-primary.sub_nav_title }}
@@ -21,6 +21,9 @@
           </ul>
         </details>
       </li>
+      {% for item in site.data.nav-primary.sub_nav %}
+      <li class="hide-mobile"><a class="contrast" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
       {% endif %}
       {% for item in site.data.nav-primary.nav %}
       <li>

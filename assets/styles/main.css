@@ -33,11 +33,24 @@ html {
   gap: 1rem;
 }
 
+.show-mobile {
+  display: none;
+}
+.hide-mobile {
+  display: inline-block;
+}
+
 @media (min-width: 576px) {
 }
 @media (max-width: 767px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .show-mobile {
+    display: inline-block;
+  }
+  .hide-mobile {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
