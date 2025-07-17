@@ -57,6 +57,15 @@
     --pico-font-size: 112.5%;
   }
 }
+@media (max-width: 787px) {
+  :root,
+  :host {
+    --pico-nav-element-spacing-vertical: 0.8rem;
+    --pico-nav-element-spacing-horizontal: 0.25rem;
+    --pico-nav-link-spacing-vertical: 0.6rem;
+    --pico-nav-link-spacing-horizontal: 0.6rem;
+  }
+}
 @media (min-width: 1024px) {
   :root,
   :host {
@@ -253,11 +262,14 @@ details summary[role="button"]:not(.outline)::after {
   filter: brightness(0) invert(1);
 }
 
-button, [type=submit], [type=button], [role=button] {
+button,
+[type="submit"],
+[type="button"],
+[role="button"] {
   --pico-font-weight: 500;
 }
 
-:is(button, [type=submit], [type=button], [role=button]).outline {
+:is(button, [type="submit"], [type="button"], [role="button"]).outline {
   color: var(--cust-black);
   background-color: var(--cust-white);
 }

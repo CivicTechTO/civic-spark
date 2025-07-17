@@ -155,12 +155,12 @@ section {
   }
 
   nav .spark {
-    height: 2rem;
+    height: 1.8rem;
     width: auto;
   }
   nav .wordmark {
     font-family: "Bitter", serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--cust-black);
   }
