@@ -99,14 +99,6 @@ section {
   padding-bottom: 1rem;
 }
 
-.cta-buttons {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
 /*
  * 
  * TYPOGRAPHY 
@@ -210,4 +202,31 @@ section {
 
 .colorized-orange path {
   fill: var(--cust-orange);
+}
+
+/* custom large button */
+.large {
+  --pico-form-element-spacing-vertical: 0.4375rem;
+  --pico-form-element-spacing-horizontal: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.cta-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .cta-buttons {
+    display: block;
+    text-align: center;
+    /* flex-direction: row; */
+    /* gap: 0.5rem; */
+  }
+  .cta-buttons .large {
+    margin: 0.25rem;
+  }
 }

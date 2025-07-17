@@ -273,10 +273,3 @@ button,
   color: var(--cust-black);
   background-color: var(--cust-white);
 }
-
-/* custom large button */
-.large {
-  --pico-form-element-spacing-vertical: 0.4375rem;
-  --pico-form-element-spacing-horizontal: 1.25rem;
-  font-size: 1.25rem;
-}
