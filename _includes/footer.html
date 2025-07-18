@@ -1,111 +1,75 @@
 <style>
-  .footer {
-    background-color: var(--cust-yellow-pale);
-    padding: 2rem 1rem;
-  }
-  .footer-nav * {
-    color: var(--cust-black);
+.footer {background-color: var(--cust-yellow-pale); padding: 2rem 1rem;}
+.footer-nav *{color: var(--cust-black);}
+.partner-logos{display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;}
+.partner-logo{height: 4rem; object-fit: contain;filter: grayscale(100%);}
+@media (max-width: 767px) {
+  .footer-nav{
+    grid-template-columns: 1fr 1fr;
   }
   .partner-logos {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .partner-logo {
-    height: 4rem;
-    object-fit: contain;
-    filter: grayscale(100%);
-  }
-  @media (max-width: 767px) {
-    .footer-nav {
-      grid-template-columns: 1fr 1fr;
-    }
-    .partner-logos {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-  @media (min-width: 1024px) {
-  }
+}
+@media (min-width: 1024px) {}
 </style>
 
 <footer class="footer">
   <div class="container">
     {% include logoform.html gray='true' %}
-    <p>
-      ​Share&nbsp;your&nbsp;story. Spark&nbsp;connection. Shape&nbsp;what’s&nbsp;next.
-    </p>
-    <div class="grid">
-      <div>
-        <div class="organizing-partners">
-          <p><strong>Organized by:</strong></p>
-          <div class="partner-logos">
-            {% for sponsor in site.data.sponsors %} {% if sponsor.level ==
-            "organizing_partner" %}
-            <a
-              href="{{ sponsor.url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="{{ sponsor.title }}"
-            >
-              <img
-                src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}"
-                alt="{{ sponsor.title }}"
-                class="partner-logo"
-              />
-            </a>
-            {% endif %} {% endfor %}
-          </div>
-        </div>
-        <br />
-        <aside class="grid footer-nav">
-          <nav>
-            <ul>
-              <li><strong>General Information</strong></li>
-              <li><a href="{{ '/about-us/' | relative_url }}">About Us</a></li>
-              <li><a href="{{ '/sponsors/' | relative_url }}">Sponsors</a></li>
-              <li><a href="{{ '/location/' | relative_url }}">Event Location</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li><strong>Programming</strong></li>
-              <li><a href="{{ '/conference/' | relative_url }}">Conference</a></li>
-              <li><a href="{{ '/unconference/' | relative_url }}">Unconference</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li><strong>Media</strong></li>
-              <li><a href="{{ '/media-kit/' | relative_url }}">Media Kit</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li><strong>Take Action</strong></li>
-              <li>
-                <a href="{{ site.data.links.registration }}" target="_blank"
-                  >Attend{% include ext-arrow.html %}</a
-                >
-              </li>
-              <li><a href="{{ site.data.links.volunteer }}">Volunteer</a></li>
-              <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-            </ul>
-          </nav>
-        </aside>
-      </div>
-      <!-- {% include signup-form.html %} -->
+    <p>​Share&nbsp;your&nbsp;story. Spark&nbsp;connection. Shape&nbsp;what’s&nbsp;next.</p>
+  <div class="grid">
+    <div>
+    <aside class="grid footer-nav">
+      <nav>
+        <ul>
+          <li><strong>General Information</strong></li>
+          <li><a href="{{ '/about-us/' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/sponsors/' | relative_url }}">Sponsors</a></li>
+          <li><a href="{{ '/location/' | relative_url }}">Event Location</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><strong>Programming</strong></li>
+          <li><a href="{{ '/conference/' | relative_url }}">Conference</a></li>
+          <li><a href="{{ '/unconference/' | relative_url }}">Unconference</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><strong>Media</strong></li>
+            <li><a href="{{ '/media-kit/' | relative_url }}">Media Kit</a></li>
+
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><strong>Take Action</strong></li>
+          <li><a href="{{ site.data.links.registration }}" target="_blank">Attend{% include ext-arrow.html %}</a></li>
+          <li><a href="{{ site.data.links.volunteer }}">Volunteer</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
     </div>
-    <br />
-    <p>
-      <small
-        >{{ site.title }} &emsp;·&emsp; August 16 & 17, 2025 &emsp;·&emsp; Myhal Centre,
-        University of Toronto &emsp;·&emsp;
-        <a href="{{ site.data.links.codeofconduct }}" target="_blank"
-          >code of conduct{% include ext-arrow.html %}</a
-        ></small
-      >
-    </p>
+    <!-- {% include signup-form.html %} -->
+  </div>
+  <br/>
+  <div class="organizing-partners">
+    <p><strong>Civic Spark is organized by:</strong></p>
+    <div class="partner-logos">
+      {% for sponsor in site.data.sponsors %}
+        {% if sponsor.level == "organizing_partner" %}
+          <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.title }}">
+            <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}" class="partner-logo">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <br/>
+  <p><small>{{ site.title }} &emsp;·&emsp; August 16 & 17, 2025 &emsp;·&emsp; Myhal Centre, University of Toronto &emsp;·&emsp; <a href="{{ site.data.links.codeofconduct }}" target="_blank">code of conduct{% include ext-arrow.html %}</a></small></p>
   </div>
 </footer>
