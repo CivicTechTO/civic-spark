@@ -49,10 +49,13 @@ For us Civic Spark is a space to:
   <div class="partner-lists">
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == "organizing_partner" %}
-        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.title }}">
-          <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}" class="partner-logo">
-        </a>
-        {{ sponsor.description }}
+        <div class="organizing-partner">
+          <h4>{{ sponsor.title }}</h4>
+          <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.title }}">
+            <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}" class="partner-logo">
+          </a>
+          {{ sponsor.description }}
+        </div>
       {% endif %}
     {% endfor %}
   </div>
