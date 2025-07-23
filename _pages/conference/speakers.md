@@ -3,6 +3,7 @@ layout: page
 title: Conference | Speakers
 description: Saturday, August 16, 2025 – Talks, sessions, and shared lessons from the field.
 permalink: /conference/speakers/
+redirect_from: /conference/speakers
 ---
 
 {% include conference-subnav.html%}

@@ -2,6 +2,7 @@
 layout: page
 title: About Us
 permalink: /about-us/
+redirect_from: /about-us
 ---
 
 <section>
