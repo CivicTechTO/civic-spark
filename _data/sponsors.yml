@@ -38,7 +38,9 @@
   url: https://www.thestar.com
   logo: Toronto-Star-Logo.svg
   level: presenting_sponsor
-  description: coming soon.
+  description: |
+    <p>The Toronto Star is Canada’s largest local daily newspaper, reaching more than 7.7 million readers across its print and digital platforms. With a legacy as the “paper for the people” and founding principles that guide its newsroom to this day, the Star continues to uphold the highest standards of journalistic integrity and social responsibility.</p>
+    <p>Toronto Star’s award-winning journalism often focuses public attention on injustices and the reforms designed to correct them. The Star is proud to be the news organization people turn to when they want a sense of community — where they are seen and heard — and when they want to see the scales balanced, wrongs righted and the powerful held to account.</p>
 
 - title: Bloom Works
   url: https://bloomworks.digital
