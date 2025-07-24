@@ -1,0 +1,49 @@
+---
+layout: base
+---
+
+<article>
+  <section class="grid">
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="speaker-image">
+    <div>
+      <h1>{{ page.title }}</h1>
+      <p>
+        <span>Starts: {{ page.startDate | date: "%I:%M %p" }}</span> &emsp;·&emsp; 
+        <span>
+          {% assign duration_str = page.duration %}
+          {% if duration_str contains 'PT' and duration_str contains 'M' %}
+            {% assign minutes = duration_str | remove: 'PT' | remove: 'M' %}
+            Duration: {{ minutes }} min
+          {% else %}
+            Duration: {{ duration_str }} min
+          {% endif %}
+        </span>
+      </p>
+      <p>
+        <span>Location: {{ page.location }}</span>
+      </p>
+      {{ content }}
+    </div>
+  </section>
+</article>
+
+<section>
+  <h2>Participants</h2>
+  
+  <div class="speaker-grid">
+    {% assign performer_slugs = page.performer %}
+    {% if performer_slugs and performer_slugs.size > 0 %}
+      {% for speaker in site.speakers %}
+        {% if performer_slugs contains speaker.slug %}
+          {% include speaker-card.html speaker=speaker %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+
+</section>
+
+
+
+
+

@@ -7,11 +7,9 @@ permalink: /conference/speakers/
 
 {% include conference-subnav.html%}
 
-## Speakers
-
-We’re finalizing the full speaker lineup and session schedule — check back in late July for updates.
-
-Or [sign up for our mailing list](/contact) to get notified as soon as it's live.
-
-Have questions or want to propose a session?  
-Reach out: [speak@civic-spark.com](mailto:speak@civic-spark.com)
+<div class="speaker-grid">
+  {% assign sorted_speakers = site.speakers | sort: "lastname" %}
+  {% for speaker in sorted_speakers %}
+    {% include speaker-card.html speaker=speaker %}
+  {% endfor %}
+</div>

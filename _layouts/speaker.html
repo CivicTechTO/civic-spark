@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<article>
+  <section class="grid">
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="headshot">
+    <div>
+      <hgroup>
+        <h1>{{ page.title }}</h1>
+        {% if page.role %}
+          <p class="speaker-role">{{ page.role }}</p>
+        {% endif %}
+      </hgroup>
+      {{ content }}
+    </div>
+  </section>
+</article>
+
+<section>
+  <h2>Participating in</h2>
+  {% assign speaker_sessions = site.sessions | where_exp: "session", "session.performer contains page.slug" %}
+  {% if speaker_sessions and speaker_sessions.size > 0 %}
+      {% for session in speaker_sessions %}
+        {% include session-card.html session=session %}          
+      {% endfor %}
+  {% else %}
+    <p>Sessions coming soon.</p>
+  {% endif %}
+</section>

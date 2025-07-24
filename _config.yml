@@ -31,6 +31,26 @@ github_username: civictechto
 
 include: ["_pages"]
 
+collections:
+  sessions:
+    output: true
+    permalink: /sessions/:path/
+  speakers:
+    output: true
+    permalink: /speakers/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: sessions
+    values:
+      layout: session
+
 # Build settings
 # theme: minima
 plugins:

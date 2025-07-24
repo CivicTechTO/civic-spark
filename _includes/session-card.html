@@ -1,0 +1,7 @@
+  <a href="{{ session.url }}" class="cardLink card">
+      <h2 class="sessionHeading">{{ session.title }}</h2>
+      <p>{{session.excerpt}}</p>
+    {{ session.speakers }}
+  <span class="tag formatTag">{{session.format}}</span>
+  {% if session.location == "Lee & Margaret Lau Auditorium" %}<span class="tag locationTag">{{ session.location }}</span>{% else %}<span class="tag locationTag alt">{{ session.location }}</span>{% endif %}
+  </a>
