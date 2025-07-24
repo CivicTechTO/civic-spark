@@ -1,7 +1,7 @@
 ---
 title: Relationships are Everything.
 excerpt: >
-  Civic tech isn’t just about good ideas—it’s about who you know. This talk shows why relationships matter and how to build them before you need them.
+  Civic tech isn’t just about good ideas. This talk shows why relationships matter and how to build them before you need them.
 startDate: 2025-08-16T10:15:00-04:00
 # duration: PT20M
 location: Lee & Margaret Lau Auditorium
