@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Get Involved
-permalink: /get-involved
+permalink: /get-involved/
+redirect_from: /get-involved
 ---
 
 <section id="get-involved">
