@@ -1,0 +1,18 @@
+website:
+  label: Website
+  icon: link.svg
+linkedin:
+  label: LinkedIn
+  icon: linkedin.svg
+instagram:
+  label: Instagram
+  icon: instagram.svg
+mastodon:
+  label: Mastodon
+  icon: 🐘
+x:
+  label: X
+  icon: x.svg
+bluesky:
+  label: Bluesky
+  icon: bluesky.svg

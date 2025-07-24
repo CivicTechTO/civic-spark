@@ -12,7 +12,12 @@ layout: base
           <p class="speaker-role">{{ page.role }}</p>
         {% endif %}
       </hgroup>
+
       {{ content }}
+
+      {% if page.social %}
+        {% include social-links.html social=page.social %}
+      {% endif %}
     </div>
   </section>
 </article>

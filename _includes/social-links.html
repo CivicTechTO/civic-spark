@@ -1,0 +1,53 @@
+{%- comment -%}
+Usage:
+  {% include social-links.html social=page.social %}
+
+Description:
+  Renders a "Social Links" section using key–value pairs passed to the `social` parameter.
+  Each key is a platform (e.g. "twitter"), and each value is the URL.
+
+  Social metadata (label, icon, emoji) is pulled from `_data/social_links.yml`.
+
+Example:
+  In front matter of a page:
+    social:
+      twitter: "https://twitter.com/example"
+      github: "https://github.com/example"
+
+  Corresponding include:
+    {% include social-links.html social=page.social %}
+
+Requirements:
+  - `_data/social_links.yml`: defines per-platform metadata:
+      twitter:
+        label: "Twitter"
+        icon: "twitter.svg"  # optional alternative: emoji: "🐦"
+  - Icons must exist in `/_includes/social/` if using `icon`.
+
+Notes:
+  - Only renders entries with matching data in `social_links.yml`.
+  - Fallbacks: label → platform name; icon → emoji
+{%- endcomment -%}
+
+{% if include.social %}
+
+  <div class="social-button-group">
+    {% for key in include.social %}
+      {% assign platform = key[0] %}
+      {% assign url = key[1] %}
+      {% assign social_data = site.data.social_links[platform] %}
+      {% assign label = social_data.label | default: platform %}
+
+      {% if social_data %}
+        <a href="{{ url }}" target="_blank" rel="noopener" class="social-button">
+          {% if social_data.icon %}
+            <span class="iconstyle">{% include social/{{ social_data.icon }} %}</span>
+          {% elsif social_data.emoji %}
+            <span class="iconstyle">{{ social_data.emoji }}</span>
+          {% endif %}
+          <span>{{ label }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

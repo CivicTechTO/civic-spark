@@ -263,23 +263,33 @@ section {
 .cardLink {
   background-size: 200% 200%;
   transition: background-position 5s ease, transform 0.25s ease;
+  /* border: calc(1 * var(--pico-border-width)) solid var(--cust-yellow); */
+  border-bottom: calc(2.5 * var(--pico-border-width)) solid var(--cust-yellow);
 }
 
 .cardLink:hover {
+  border-color: var(--cust-magenta);
   transform: translate(0, -0.25rem);
   /* box-shadow: var(--pico-group-box-shadow-focus-with-button); */
-  background-image: linear-gradient(
+  background-color: var(--cust-yellow);
+
+  /* background-image: linear-gradient(
     -45deg,
     var(--cust-magenta-pale),
     var(--cust-yellow-pale)
-  );
+  ); */
   background-position: 100% 100%;
 }
+
+/* .cardLink:hover .headshot {
+  border-color: var(--cust-magenta);
+} */
 
 .headshot {
   width: 100%;
   aspect-ratio: 4 / 5;
   height: auto;
+  /* border: calc(1 * var(--pico-border-width)) solid var(--cust-yellow); */
   border-radius: var(--pico-border-radius);
   object-fit: cover;
   overflow: hidden;
@@ -321,4 +331,47 @@ section {
   background-color: var(--cust-magenta);
   color: var(--cust-white);
   border: var(--pico-border-width) solid var(--cust-magenta);
+}
+
+/* === Social Buttons === */
+
+.social-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: var(--pico-border-width) solid var(--pico-primary);
+  border-radius: var(--pico-border-radius);
+  /* background-color: var(--pico-muted-background-color); */
+  color: var(--pico-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.social-button:hover {
+  background-color: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-color: var(--pico-primary);
+}
+
+.social-button img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.iconstyle svg {
+  color: inherit;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
 }
