@@ -3,41 +3,55 @@
   logo: civictechtoronto.webp
   level: organizing_partner
   description: |
-    Civic Tech Toronto is a vibrant and diverse community of Torontonians engaged  in understanding and creating solutions for civic challenges through technology,  design, and other innovative means.
-    The organizing team for Civic Spark is predominantly formed from volunteers from Civic Tech Toronto.
+    <p>Civic Tech Toronto is a vibrant and diverse community engaged in understanding and creating solutions for civic challenges through technology, design, and other innovative means. Civic Spark has been made possible thanks to the commitment and leadership of many volunteers from the Civic Tech Toronto community.</p>    
+    <p>Since 2015, the Civic Tech Toronto community has come together at weekly meet-ups featuring a speaker as well as participant-organized breakout sessions to work on projects that use data, design, and technology to make Toronto better. Find out more and join us at an upcoming meet-up at <a href="https://civictech.ca/">civictech.ca</a></p>
 
 - title: Centre for Analytics & Artificial Intelligence Engineering (CARTE)
   url: https://carte.utoronto.ca
   logo: carte.png
   level: organizing_partner
-  description: coming soon.
+  description: |
+    <p>The Centre for Analytics & Artificial Intelligence Engineering (CARTE) is a hub for collaborations and partnerships in analytics and artificial intelligence at The University of Toronto's Faculty of Applied Science and Engineering. Their mission is to conduct state-of-the-art research while nurturing the next generation of engineering talent.</p>
+    <p>CARTE facilitates applied research in Artificial Intelligence (AI) with external partners, over 100 affiliated faculty members and students and also offers customizable AI and machine learning training to industry and academic partners.</p>
+
 
 - title: 1RG
   url: https://1rg.space
   logo: 1rg.svg
   level: organizing_partner
-  description: coming soon.
+  description: |
+    <p>1RG believes that the development of technology can and should be stewarded to support human agency, democracy, building richer and more vibrant communities, and the flourishing of all life.</p>
+    <p><a href="https://labs.1rg.space/">1RG Labs</a> develops good software for resilient futures. They provide expertise in engineering, data science, product development and security.</p>
+    <p><a href="https://1rg.space/">1RG Space</a> is an inclusive co-working and event space located in Toronto’s The Junction neighbourhood, built on a foundation of community. At 1RG Space, members can find a supportive environment to actively collaborate, grow, and learn together.</p>
+
 
 - title: Open Data – The City of Toronto
   url: https://open.toronto.ca
   logo: Toronto Lockup Transparent.png
   level: presenting_sponsor
-  description: coming soon.
+  description: |
+    <p>Since 2009, the City of Toronto Open Data team has published accessible, high-quality datasets that support transparency, innovation, and public engagement through the City’s Open Data portal. This service of the City’s Technology Services division helps residents, businesses, and researchers use city data to inform decisions, build tools, and generate insights.</p>
+    <p>In addition to publicly sharing data from a variety of City divisions and agencies, the Open Data team also showcases citizens and companies that have used open data on their <a href="https://open.toronto.ca/gallery/">project gallery</a> and recognizes open data leaders in the City through their annual Open Data Awards.</p>
+
 
 - title: The Toronto Star
   url: https://www.thestar.com
   logo: Toronto-Star-Logo.svg
   level: presenting_sponsor
-  description: coming soon.
+  description: |
+    <p>The Toronto Star is Canada’s largest local daily newspaper, reaching more than 7.7 million readers across its print and digital platforms. With a legacy as the “paper for the people” and founding principles that guide its newsroom to this day, the Star continues to uphold the highest standards of journalistic integrity and social responsibility.</p>
+    <p>Toronto Star’s award-winning journalism often focuses public attention on injustices and the reforms designed to correct them. The Star is proud to be the news organization people turn to when they want a sense of community — where they are seen and heard — and when they want to see the scales balanced, wrongs righted and the powerful held to account.</p>
 
 - title: Bloom Works
   url: https://bloomworks.digital
   logo: bloom.svg
   level: major_sponsor
-  description: coming soon.
+  description: |
+    Bloom Works is a woman-owned public benefit company that helps government and other organizations serve people better with digital services and human-centred design.
 
 - title: Code for Canada
   url: https://codefor.ca
   logo: code-for-canada-logo.png
   level: supporting_sponsor
-  description: coming soon.
+  description: |
+    Code for Canada is a national non-profit that partners with governments and non-profits to help them independently deliver digital services that work for everyone. Through their work with over 50 government and non-profit partners to-date, their team uses digital skills for good, building capacity and creating better services.
