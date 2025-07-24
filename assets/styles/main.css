@@ -260,11 +260,20 @@ section {
   color: var(--cust-black);
 }
 
+.cardLink {
+  background-size: 200% 200%;
+  transition: background-position 5s ease, transform 0.25s ease;
+}
+
 .cardLink:hover {
   transform: translate(0, -0.25rem);
   /* box-shadow: var(--pico-group-box-shadow-focus-with-button); */
-  background-color: var(--cust-magenta-pale);
-  background-color: var(--cust-yellow-pale);
+  background-image: linear-gradient(
+    -45deg,
+    var(--cust-magenta-pale),
+    var(--cust-yellow-pale)
+  );
+  background-position: 100% 100%;
 }
 
 .headshot {
@@ -300,7 +309,7 @@ section {
 .formatTag {
   background-color: var(--cust-white);
   color: var(--pico-muted-color);
-  border: var(--pico-border-width) solid var(--pico-muted-border-color);
+  border: var(--pico-border-width) solid var(--cust-magenta-pale);
 }
 
 .locationTag {

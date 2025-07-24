@@ -4,7 +4,7 @@ layout: base
 
 <article>
   <section class="grid">
-    <img src="{{ page.image }}" alt="{{ page.title }}" class="speaker-image">
+    <!-- <img src="{{ page.image }}" alt="{{ page.title }}" class="speaker-image"> -->
     <div>
       <h1>{{ page.title }}</h1>
       <p>
@@ -15,7 +15,7 @@ layout: base
             {% assign minutes = duration_str | remove: 'PT' | remove: 'M' %}
             Duration: {{ minutes }} min
           {% else %}
-            Duration: {{ duration_str }} min
+            Duration: {{ duration_str }}
           {% endif %}
         </span>
       </p>
