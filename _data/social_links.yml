@@ -9,7 +9,7 @@ instagram:
   icon: instagram.svg
 mastodon:
   label: Mastodon
-  icon: 🐘
+  icon: mastodon.svg
 x:
   label: X
   icon: x.svg
