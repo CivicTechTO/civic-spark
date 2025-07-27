@@ -8,11 +8,11 @@ redirect_from: /conference
 
 {% include conference-subnav.html%}
 
-<article class="grid grid-blade">
+<article class="grid grid-blade ">
 <div class="image-area colorized-magenta">
   {% include svg-converse.svg %}
 </div>
-<div>
+<div class="text-area">
   <h2 class="colorized-magenta">Overview</h2>
 <p><span class="lead">This isn’t a product pitch stage. It’s a space to <strong class="colorized-magenta">share real stories</strong>, <strong class="colorized-magenta">reflect on hard-won lessons</strong>, and <strong class="colorized-magenta">explore what’s possible</strong> when we build with care, creativity, and community.</span></p>
 <p>The Civic Spark Conference kicks off with a curated day of panels, talks, and workshops — spotlighting the people building community-powered tools, services, and networks across North America.</p>
