@@ -2,7 +2,7 @@
 title: Max Veytsman
 lastname: Veytsman
 role: Co-Founder at 1RG
-image: /assets/images/speakers/veytsman.webp
+image: /assets/images/speakers/veytsman.jpg
 published: true
 ---
 
