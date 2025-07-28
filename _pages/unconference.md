@@ -28,7 +28,7 @@ redirect_from: /unconference
 <li><strong class="colorized-orange">Join in</strong>: Every session is open. Step into a conversation, bring your perspective, or just follow your curiosity.</li>
 </ul>
 
-<p>We’ll have a physical session board in the space to coordinate the day — so you’ll always know what’s happening, where, and when. Sessions will be grouped by theme, interest, or energy, with support from our facilitation team.</p>
+<p>We’ll have a physical session board in the space to coordinate the day — so you’ll always know what’s happening, where, and when.</p>
 </div>
 
 <h2 class="colorized-orange">What Makes It Work</h2>
@@ -46,7 +46,7 @@ We’ll help with timekeeping, materials, and light facilitation support. You br
 
 <h2 class="colorized-orange">What Happens After</h2>
 
-At the end of the day, we’ll host a collective wrap-up and showcase. You’ll get to see what other groups explored — and maybe find collaborators for what comes next.
+At the end of the day, we’ll host a collective wrap-up. You’ll get to see what other groups explored — and maybe find collaborators for what comes next.
 
 <h2 class="colorized-orange">Who It’s For</h2>
 
