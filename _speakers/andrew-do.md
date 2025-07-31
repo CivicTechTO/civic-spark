@@ -1,7 +1,7 @@
 ---
 title: Andrew Do
 lastname: Do
-role: Designer/Researcher
+role: Designer/Researcher at Nava PBC, Former Co-organizer of Civic Tech Toronto
 image: /assets/images/speakers/do.jpg
 published: true
 social:
