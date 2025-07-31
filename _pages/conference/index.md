@@ -30,7 +30,7 @@ redirect_from: /conference
 <section>
 <h2 class="colorized-magenta">Speakers</h2>
 <div class="speaker-grid">
-  {% assign shuffled_speakers = site.speakers | sample: 3 %}
+  {% assign shuffled_speakers = site.speakers | sample: 4 %}
   {% for speaker in shuffled_speakers %}
     {% include speaker-card.html speaker=speaker %}
   {% endfor %}
