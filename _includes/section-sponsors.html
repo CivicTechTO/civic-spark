@@ -1,6 +1,4 @@
 <section class="container">
-  <hr>
-  <p>Presenting Sponsors</p>
   <style>
     .sponsors {
       display: grid;
@@ -17,7 +15,8 @@
     .sponsors img:hover {
       filter: none;
     }
-    .sponsors a, .textsponsor {
+    .sponsors a,
+    .textsponsor {
       text-decoration: none;
       color: inherit;
     }
@@ -26,31 +25,55 @@
       .sponsors {
         grid-template-columns: auto;
         gap: 2rem;
-        margin: 3rem 0 3rem 0;
-      } 
-      .sponsors img{
+      }
+      .sponsors img {
         max-width: 60vw;
       }
     }
-    @media (min-width: 1024px) {}
   </style>
+  <hr />
+  <p>Presenting Sponsors</p>
   <div class="sponsors">
-    {% for sponsor in site.data.sponsors %}
-      {% if sponsor.level == "presenting_sponsor" %}
-        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
-          <img src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.title }}">
-        </a>
-      {% endif %}
-    {% endfor %}
-    </div>
-    <div>
-      <p>
-        Major and supporting sponsors:&ensp;
-        {% assign major_supporting = site.data.sponsors | where_exp: "s", "s.level == 'major_sponsor' or s.level == 'supporting_sponsor'" %}
-        {% for sponsor in major_supporting %}
-          <a class="textsponsor" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">{{ sponsor.title }}</a>
-          {% unless forloop.last %} • {% endunless %}
-        {% endfor %}<br/>
-      <a href="{{ '/sponsors' | relative_url}}">Learn more about our sponsors</a></p>
-    </div>
+    {% for sponsor in site.data.sponsors %} {% if sponsor.level ==
+    "presenting_sponsor" %}
+    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+      <img
+        src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}"
+        alt="{{ sponsor.title }}"
+      />
+    </a>
+    {% endif %} {% endfor %}
+  </div>
+  <p>Lead Sponsor</p>
+  <div class="sponsors">
+    {% for sponsor in site.data.sponsors %} {% if sponsor.level ==
+    "lead_sponsor" %}
+    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+      <img
+        src="{{ site.baseurl }}/assets/images/sponsors/{{ sponsor.logo }}"
+        alt="{{ sponsor.title }}"
+      />
+    </a>
+    {% endif %} {% endfor %}
+  </div>
+  <div>
+    <p>
+      Major and supporting sponsors:&ensp; {% assign major_supporting =
+      site.data.sponsors | where_exp: "s", "s.level == 'major_sponsor' or
+      s.level == 'supporting_sponsor'" %} {% for sponsor in major_supporting %}
+      <a
+        class="textsponsor"
+        href="{{ sponsor.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ sponsor.title }}</a
+      >
+      {% unless forloop.last %} • {% endunless %} {% endfor %}<br />
+    </p>
+    <p>
+      <a href="{{ '/sponsors' | relative_url}}"
+        >Learn more about our sponsors</a
+      >
+    </p>
+  </div>
 </section>

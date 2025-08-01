@@ -2,6 +2,7 @@
 layout: home
 permalink: /
 redirect_from: /event-overview/
+hide_sponsors: true
 ---
 
 <!-- 
@@ -234,7 +235,7 @@ redirect_from: /event-overview/
   </div>
 </section>
 
-<section>
+<section id="supporters">
   <div class="inset-section">
     <h2>Supporters</h2>
     <p>
@@ -249,5 +250,6 @@ redirect_from: /event-overview/
       >, <a href="{{ site.data.links.carte }}" target="_blank">CARTE</a>, and
       <a href="{{ site.data.links.one-rg }}" target="_blank">1RG</a>.
     </p>
+    {% include section-sponsors.html %}
   </div>
 </section>
