@@ -55,3 +55,10 @@
   level: supporting_sponsor
   description: |
     Code for Canada is a national non-profit that partners with governments and non-profits to help them independently deliver digital services that work for everyone. Through their work with over 50 government and non-profit partners to-date, their team uses digital skills for good, building capacity and creating better services.
+
+- title: webCOMAND
+  url: https://www.webcomand.com/
+  logo: webcomand-logo-blue.svg
+  level: supporting_sponsor
+  description: |
+    <a href="https://www.webcomand.com/">webCOMAND</a> is a data and content platform for building civic tech projects. Create databases, collect information, import and share open data, and display data on maps. Build websites, apps, and workflows that empower communities. With a free tier and user-friendly tools, webCOMAND can help turn your idea into an impactful reality.
