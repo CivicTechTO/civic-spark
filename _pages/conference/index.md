@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conference | Overview
-description: 9am–4:30pm on Saturday, August 16, 2025 – Talks, sessions, and shared lessons from the field.
+description: 9am–5pm on Saturday, August 16, 2025 – Talks, sessions, and shared lessons from the field.
 permalink: /conference/
 redirect_from: /conference
 ---
