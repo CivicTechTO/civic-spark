@@ -36,6 +36,9 @@ redirect_from: /conference
   {% endfor %}
 </div>
 <p>See the full lineup and speaker details on the <a href="{{ '/conference/speakers' | relative_url }}">Speakers page</a>.</p>
+
+<a role="button" href="{{ '/conference/speakers' | relative_url }}">View all Speakers</a>
+
 </section>
 
 <section>
