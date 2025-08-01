@@ -1,3 +1,10 @@
+# levels:
+# - organizing_partner
+# - presenting_sponsor
+# - lead_sponsor
+# - major_sponsor
+# - supporting_sponsor
+
 - title: Civic Tech Toronto
   url: https://civictech.ca
   logo: civictechtoronto.webp
@@ -62,3 +69,10 @@
   level: supporting_sponsor
   description: |
     <a href="https://www.webcomand.com/">webCOMAND</a> is a data and content platform for building civic tech projects. Create databases, collect information, import and share open data, and display data on maps. Build websites, apps, and workflows that empower communities. With a free tier and user-friendly tools, webCOMAND can help turn your idea into an impactful reality.
+
+- title: School of Cities at the University of Toronto
+  url: https://schoolofcities.utoronto.ca
+  logo: UofT_SoC_RGB.png
+  level: lead_sponsor
+  description: |
+    The <a href="https://schoolofcities.utoronto.ca">School of Cities</a> is a unique multidisciplinary hub for urban research, education, and engagement creating new and just ways for cities and their residents to thrive. Based at the University of Toronto and in a fast-growing, culturally diverse, and economically dynamic urban region, the School of Cities supports leading scholars, practitioners, and community members spanning disciplines and lived experiences to co-create new understandings, policies, and practices. 
