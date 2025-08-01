@@ -9,4 +9,4 @@ social:
   mastodon: https://phire.place/@phire
 ---
 
-Jenny is a writer, software developer, and secret idealist. She is the founder of Show Up Toronto, which makes it easier for Torontonians to get involved in community organizing and mutual aid.
+Jenny is a writer, software developer, and secret optimist. She is the founder of Show Up Toronto, which makes it easier for Torontonians to get involved in community organizing and mutual aid.
