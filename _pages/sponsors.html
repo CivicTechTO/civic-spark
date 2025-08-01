@@ -40,25 +40,26 @@ hide_sponsors: true
 </style>
 
 <p>
-  Thank you to all of our partners for helping make Civic Spark possible and for sharing
-  our vision of creating a vibrant, people-centred ecosystem where communities use data,
-  design, and organizing to tackle civic challenges collaboratively, equitably, and
-  creatively.
+  Thank you to all of our partners for helping make Civic Spark possible and for
+  sharing our vision of creating a vibrant, people-centred ecosystem where
+  communities use data, design, and organizing to tackle civic challenges
+  collaboratively, equitably, and creatively.
 </p>
 
 {% assign levels =
-"presenting_sponsor,major_sponsor,supporting_sponsor,community_partner,organizing_partner"
+"presenting_sponsor,lead_sponsor,major_sponsor,supporting_sponsor,community_partner,organizing_partner"
 | split: "," %} {% assign level_names = "presenting_sponsor:Presenting
-Partner,major_sponsor:Major Sponsor,supporting_sponsor:Supporting
-Sponsor,community_partner:Community Partner,organizing_partner:Organizing Partner" |
-split: "," | map: "split" | map: "first" | zip: "split:':'|last" %} {% for level in
-levels %} {% assign sponsors_in_level = site.data.sponsors | where: "level", level %} {%
-if sponsors_in_level.size > 0 %}
+Partner,lead_sponsor:Lead Sponsor,major_sponsor:Major
+Sponsor,supporting_sponsor:Supporting Sponsor,community_partner:Community
+Partner,organizing_partner:Organizing Partner" | split: "," | map: "split" |
+map: "first" | zip: "split:':'|last" %} {% for level in levels %} {% assign
+sponsors_in_level = site.data.sponsors | where: "level", level %} {% if
+sponsors_in_level.size > 0 %}
 <h2>
   {% case level %} {% when "presenting_sponsor" %}Presenting Sponsors {% when
-  "lead_sponsor" %}Lead Sponsors {% when "major_sponsor" %}Major Sponsors {% when
-  "supporting_sponsor" %}Supporting Sponsors {% when "organizing_partner" %}Organized
-  and Supported By{% else %}{{ level | capitalize }} {% endcase %}
+  "lead_sponsor" %}Lead Sponsor {% when "major_sponsor" %}Major Sponsor {% when
+  "supporting_sponsor" %}Supporting Sponsors {% when "organizing_partner"
+  %}Organized and Supported By{% else %}{{ level | capitalize }} {% endcase %}
 </h2>
 <div class="sponsor-list sponsor-grid sponsor-list-{{ level }}">
   {% for sponsor in sponsors_in_level %}
