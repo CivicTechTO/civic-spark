@@ -1,6 +1,6 @@
 ---
 title: Fateha Hossain
-lastname: hossain
+lastname: Hossain
 role: Community Markets at FoodShare, Board Members at plazaPOPS
 image: /assets/images/speakers/hossain.jpg
 published: true

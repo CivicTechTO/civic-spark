@@ -1,6 +1,6 @@
 ---
 title: Katelyn Macdonald
-lastname: macdonald
+lastname: Macdonald
 role: Strategic Lead, Climate Resilient Communities
 image: /assets/images/speakers/macdonald.jpg
 published: true

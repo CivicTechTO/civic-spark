@@ -1,6 +1,6 @@
 ---
 title: Helena Yu
-lastname: yu
+lastname: Yu
 role: Strategic Lead, Climate Resilient Communities
 image: /assets/images/speakers/yu.jpg
 published: true

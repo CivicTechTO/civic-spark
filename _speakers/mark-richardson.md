@@ -1,6 +1,6 @@
 ---
 title: Mark Richardson
-lastname: richardson
+lastname: Richardson
 role: Technical Lead, HousingNowTO
 image: /assets/images/speakers/richardson.jpg
 published: true

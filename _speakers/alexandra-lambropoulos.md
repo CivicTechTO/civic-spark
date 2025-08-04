@@ -1,6 +1,6 @@
 ---
 title: Alexandra Lambropoulos
-lastname: lambropoulos
+lastname: Lambropoulos
 role: Founder, Untitled Planning & Board Member of plazaPOPS
 image: /assets/images/speakers/lambropoulos.jpg
 published: true
