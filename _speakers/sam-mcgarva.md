@@ -1,7 +1,7 @@
 ---
 title: Sam McGarva
 lastname: McGarva
-role: Member, Civic Tech Toronto
+role: 2024 Steering Committee Chair, Civic Tech Toronto
 image: /assets/images/speakers/mcgarva.jpg
 published: true
 social:
