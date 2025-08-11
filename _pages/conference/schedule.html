@@ -8,12 +8,11 @@ permalink: /conference/schedule/
 {% include conference-subnav.html%}
 
 <div class="session-grid">
-
-{% assign sessions = site.sessions | sort: "startDate" %}
-{% for session in sessions %}
-  {% include session-card.html session=session %}
-{% endfor %}
-
+<!--  assign sessions = site.sessions | sort: "startDate" 
+      for session in sessions 
+      include session-card.html session=session
+      endfor
+ -->
 </div>
 <p>Schedule Sessions will be posted in full on August 14th.</p>
 <p><em>Times and sessions are subject to change.</em></p>
