@@ -9,6 +9,7 @@ location: "[[Main Stage]]"
 format: Conversation
 performer:
   - "[[Varun Chandak]]"
+  - "[[Shingai Manjengwa]]"
 published: true
 moderator: "[[Alex Tveit]]"
 ---
