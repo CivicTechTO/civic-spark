@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Unconference
+title: Unconference | Overview
 description: 9am–4:30pm on Sunday, August 17, 2025 – Participant-led sessions, collaboration, and co-creation grounded in community insight.
 permalink: /unconference/
 redirect_from: /unconference
 ---
+
+{% include unconference-subnav.html%}
 
 <article class="grid grid-blade reversed">
 <div class="image-area colorized-orange">
