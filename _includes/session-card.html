@@ -1,7 +1,31 @@
   <a href="{{ session.url }}" class="cardLink card">
+    <hgroup>
       <h2 class="sessionHeading">{{ session.title }}</h2>
-      <p>{{session.excerpt}}</p>
-    {{ session.speakers }}
-  <span class="tag formatTag">{{session.format}}</span>
-  {% if session.location == "Lee & Margaret Lau Auditorium" %}<span class="tag locationTag">{{ session.location }}</span>{% else %}<span class="tag locationTag alt">{{ session.location }}</span>{% endif %}
+      {% if session.subtitle %}
+      <p>
+        {{ session.subtitle }}
+      </p> 
+      {% endif %}
+    </hgroup>
+    <p>
+      with
+      {% for performer in session.performer %}
+      {% assign name = performer | replace: '[', '' | replace: ']', '' %}
+      {{ name }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
+      {% endfor %}
+      {% if session.moderator %}
+      {% assign mod = session.moderator | replace: '[', '' | replace: ']', '' %}
+      moderated by {{ mod }}
+      {% endif %}
+    </p>
+    
+    {% if session.location == "[[Main Stage]]" %}
+    <span class="tag locationTag">Main Stage · {{ session.startDate | date: "%-I:%M %p" }} – {{ session.endDate | date: "%I:%M %p" }}</span>
+    {% else %}
+    <span class="tag locationTag alt">Second Stage · {{ session.startDate | date: "%-I:%M %p" }}  – {{ session.endDate | date: "%I:%M %p" }}</span>
+    {% endif %}
+    <span class="tag formatTag">{{session.format}}</span>
+    
+    
+    
   </a>

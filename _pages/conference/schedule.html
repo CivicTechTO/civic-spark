@@ -7,12 +7,50 @@ permalink: /conference/schedule/
 
 {% include conference-subnav.html%}
 
-<div class="session-grid">
-<!--  assign sessions = site.sessions | sort: "startDate" 
-      for session in sessions 
-      include session-card.html session=session
-      endfor
- -->
+<hr>
+
+<div class="show-mobile">
+<p>Jump to a stage:</p>
+<nav>
+<ul>
+<li><a role="button" class="contrast" href="#main-stage">Main Stage</a></li>
+<li><a role="button" class="primary" href="#second-stage">Second Stage</a></li>
+</ul>
+</nav>
 </div>
+
+
+<div class="grid">
+
+  <!-- Main Stage -->
+      <div id="main-stage">
+  <h2>Main Stage</h2>
+  <div class="session-grid">
+    {% assign sessions = site.sessions | sort: "startDate" %}
+    {% for session in sessions %}
+      {% if session.location == "[[Main Stage]]" %}
+        {% include session-card.html session=session %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+
+  <!-- Second Stage -->
+   <div id="second-stage">
+  <h2>Second Stage</h2>
+  <div class="session-grid">
+    {% assign sessions = site.sessions | sort: "startDate" %}
+    {% for session in sessions %}
+      {% if session.location == "[[Second Stage]]" %}
+        {% include session-card.html session=session %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+
+</div>
+
+
+
 <p>Schedule Sessions will be posted in full on August 14th.</p>
 <p><em>Times and sessions are subject to change.</em></p>

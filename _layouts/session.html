@@ -2,48 +2,82 @@
 layout: base
 ---
 
+<a class="breadcrumblink" href="{{ '/conference/schedule' | relative_url }}">← back to conference schedule</a>
+
 <article>
   <section class="grid">
-    <!-- <img src="{{ page.image }}" alt="{{ page.title }}" class="speaker-image"> -->
     <div>
-      <h1>{{ page.title }}</h1>
-      <p>
-        <span>Starts: {{ page.startDate | date: "%I:%M %p" }}</span> &emsp;·&emsp; 
-        <span>
-          {% assign duration_str = page.duration %}
-          {% if duration_str contains 'PT' and duration_str contains 'M' %}
-            {% assign minutes = duration_str | remove: 'PT' | remove: 'M' %}
-            Duration: {{ minutes }} min
-          {% else %}
-            Duration: {{ duration_str }}
-          {% endif %}
-        </span>
+      <hgroup>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="lead">{{ page.subtitle }}</p>
+        {% endif %}
+      </hgroup>
+      
+      <p class="meta">
+        {% if page.startDate %}
+        <span> {{ page.startDate | date: "%-I:%M %p" }}</span>
+        {% endif %}
+        {% if page.endDate %} – {{ page.endDate | date: " %-I:%M %p, %B %-d" }}</span>
+        {% endif %}
+        <br> <br>
+        {% if page.location == "[[Main Stage]]" %}
+        <span class="tag locationTag">Main Stage</span>
+        {% else %}
+        <span class="tag locationTag alt">Second Stage</span>
+        {% endif %}
+        <span class="tag formatTag">{{page.format}}</span>
       </p>
-      <p>
-        <span>Location: {{ page.location }}</span>
-      </p>
+      
+      
+      
+      
       {{ content }}
     </div>
   </section>
 </article>
 
+
 <section>
   <h2>Participants</h2>
   
+  {%- comment -%}
+  Combine performer + moderator into one list, strip [[ ]], 
+  then resolve each to a _speakers collection item by relative_path.
+  {%- endcomment -%}
+  
+  {% assign raw_participants = "" | split: "" %}
+  
+  {% if page.performer %}
+  {% assign raw_participants = raw_participants | concat: page.performer %}
+  {% endif %}
+  {% if page.moderator %}
+  {%- if page.moderator.kind_of == 'Array' -%}
+  {% assign raw_participants = raw_participants | concat: page.moderator %}
+  {%- else -%}
+  {% assign raw_participants = raw_participants | push: page.moderator %}
+  {%- endif -%}
+  {% endif %}
+  
+  {% assign resolved_participants = "" | split: "" %}
+  
+  {% for participant in raw_participants %}
+  {% assign name = participant | remove: '[[' | remove: ']]' | strip %}
+  {%- comment -%} Adjust path if your _speakers folder is named differently {%- endcomment -%}
+  {% assign path = '_speakers/' | append: name | append: '.md' %}
+  {% assign person = site.speakers | where: "relative_path", path | first %}
+  {% if person %}
+  {% assign resolved_participants = resolved_participants | push: person %}
+  {% endif %}
+  {% endfor %}
+  
   <div class="speaker-grid">
-    {% assign performer_slugs = page.performer %}
-    {% if performer_slugs and performer_slugs.size > 0 %}
-      {% for speaker in site.speakers %}
-        {% if performer_slugs contains speaker.slug %}
-          {% include speaker-card.html speaker=speaker %}
-        {% endif %}
-      {% endfor %}
+    {% if resolved_participants.size > 0 %}
+    {% for speaker in resolved_participants %}
+    {% include speaker-card.html speaker=speaker %}
+    {% endfor %}
+    {% else %}
+    <p>Participants will be posted shortly.</p>
     {% endif %}
   </div>
-
 </section>
-
-
-
-
-

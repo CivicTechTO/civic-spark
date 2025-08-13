@@ -106,8 +106,8 @@ section {
  */
 
 .lead {
-  font-size: 125%;
-  line-height: 1.55;
+  font-size: 125% !important;
+  line-height: 1.55 !important;
 }
 
 .external-arrow {
@@ -262,8 +262,10 @@ section {
 
 .cardLink {
   background-size: 200% 200%;
-  transition: background-position 5s ease, transform 0.25s ease;
+  transition: background-position 5s ease, background-color 0.5s ease,
+    transform 0.25s ease;
   /* border: calc(1 * var(--pico-border-width)) solid var(--cust-yellow); */
+  border: calc(1 * var(--pico-border-width)) solid var(--cust-yellow);
   border-bottom: calc(2.5 * var(--pico-border-width)) solid var(--cust-yellow);
 }
 
@@ -271,7 +273,7 @@ section {
   border-color: var(--cust-magenta);
   transform: translate(0, -0.25rem);
   /* box-shadow: var(--pico-group-box-shadow-focus-with-button); */
-  background-color: var(--cust-yellow);
+  background-color: var(--cust-yellow-pale);
 
   /* background-image: linear-gradient(
     -45deg,
@@ -299,9 +301,8 @@ section {
 /* Session Objects */
 
 .sessionHeading {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 /* tags */
@@ -319,18 +320,18 @@ section {
 .formatTag {
   background-color: var(--cust-white);
   color: var(--pico-muted-color);
-  border: var(--pico-border-width) solid var(--cust-magenta-pale);
+  /* border: var(--pico-border-width) solid var(--cust-orange-pale); */
 }
 
 .locationTag {
-  background-color: var(--cust-yellow);
+  background-color: var(--cust-yellow-light);
   color: var(--cust-black);
-  border: var(--pico-border-width) solid var(--cust-yellow);
+  /* border: var(--pico-border-width) solid var(--cust-yellow); */
 }
 .locationTag.alt {
-  background-color: var(--cust-magenta);
-  color: var(--cust-white);
-  border: var(--pico-border-width) solid var(--cust-magenta);
+  background-color: var(--cust-magenta-light);
+  color: var(--cust-black);
+  /* border: var(--pico-border-width) solid var(--cust-magenta-pale); */
 }
 
 /* === Social Buttons === */
@@ -374,4 +375,10 @@ section {
   height: 1.2rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+.breadcrumblink {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: block;
 }

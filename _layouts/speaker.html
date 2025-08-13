@@ -2,30 +2,46 @@
 layout: base
 ---
 
+<a class="breadcrumblink" href="{{ '/conference/speakers' | relative_url }}">← back to speakers</a>
+
 <article class="grid">
-    <img src="{{ page.image }}" alt="{{ page.title }}" class="headshot">
-    <section>
-      <hgroup>
-        <h1>{{ page.title }}</h1>
-        {% if page.role %}
-          <p class="speaker-role">{{ page.role }}</p>
-        {% endif %}
-      </hgroup>
-
-      {{ content }}
-
-      {% if page.social %}
-        {% include social-links.html social=page.social %}
+  <img src="{{ page.image }}" alt="{{ page.title }}" class="headshot">
+  <section>
+    <hgroup>
+      <h1>{{ page.title }}</h1>
+      {% if page.role %}
+      <p class="speaker-role">{{ page.role }}</p>
       {% endif %}
-      <h2 style="font-size: 1rem; margin: 2rem 0 1rem 0; ">Participating In</h2>
-      {% assign speaker_sessions = site.sessions | where_exp: "session", "session.performer contains page.slug" %}
-      {% if speaker_sessions and speaker_sessions.size > 0 %}
-          {% for session in speaker_sessions %}
-            {% include session-card.html session=session %}          
-          {% endfor %}
-      {% else %}
-        <p>Sessions will be posted in full on August 14th.</p>
-      {% endif %}
-    </section>
+    </hgroup>
+    
+    {{ content }}
+    
+    {% if page.social %}
+    {% include social-links.html social=page.social %}
+    {% endif %}
+    <h2 style="font-size: 1rem; margin: 2rem 0 1rem 0; ">Participating In</h2>
+    
+    {%- assign person_key = '[[' | append: page.slug | append: ']]' -%}
+    
+    {%- assign sessions_performer = site.sessions | where_exp: "s", "s.performer contains person_key" -%}
+    {%- assign sessions_moderator = site.sessions | where_exp: "s", "s.moderator contains person_key" -%}
+    
+    {%- comment -%}
+    Merge both arrays
+    {%- endcomment -%}
+    {%- assign speaker_sessions = sessions_performer | concat: sessions_moderator | uniq | sort: "startDate" -%}
+    
+    {% if speaker_sessions and speaker_sessions.size > 0 %}
+    <div class="session-grid">
+    {% for session in speaker_sessions %}
+    {% include session-card.html session=session %}
+    {% endfor %}
+    </div>
+    {% else %}
+    <p>Sessions will be posted in full on August 14th.</p>
+    {% endif %}
+    
+    
+  </section>
 </article>
 
