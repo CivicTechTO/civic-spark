@@ -8,7 +8,7 @@ location: "[[Second Stage]]"
 format: Panel
 performer:
   - "[[Max Veytsman]]"
-  - "[[Additional Guest]]"
+  - "[[Phi]]"
 published: true
 moderator: "[[Jenny Zhang]]"
 ---
