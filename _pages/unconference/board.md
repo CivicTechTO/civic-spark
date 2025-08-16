@@ -7,6 +7,6 @@ permalink: /unconference/board
 
 {% include unconference-subnav.html%}
 
-Coming soon.
+The conference board is updated regularly while the unconference is in progress.
 
-<!-- <img src="/assets/images/board/latest.jpg"> -->
+<img class="boardimage" src="https://jordyarms.github.io/civic-spark-board/latest.jpg">
