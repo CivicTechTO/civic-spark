@@ -1,7 +1,7 @@
 nav:
-  - title: Tickets
-    url: https://lu.ma/civic-spark
-    external: true
+  # - title: Tickets
+  #   url: https://lu.ma/civic-spark
+  #   external: true
 
 sub_nav_title: Menu
 
