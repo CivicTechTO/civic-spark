@@ -391,3 +391,21 @@ section {
   margin: 0 auto;
   border-radius: var(--pico-border-radius);
 }
+
+.announcement {
+  border-radius: var(--pico-border-radius);
+  background-color: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: var(--pico-box-shadow); 
+}
+.announcement a {
+  color: var(--pico-primary-inverse);
+  text-decoration: none;
+}
+.announcement a:hover { 
+  color: var(--pico-primary-inverse-hover);
+}
