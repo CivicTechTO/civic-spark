@@ -2,12 +2,12 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  gap: var(--pico-spacing);
 }
 .gallery img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: var(--pico-border-radius);
   cursor: pointer;
 }
