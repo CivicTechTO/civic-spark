@@ -14,6 +14,10 @@ Civic Tech Toronto runs weekly events year-round. Find info at [civictech.ca](ht
 
 ### Gallery
 
-Highlights are now available. More photos will be added soon.
+Highlights are now available. More photos will be added soon!
 
 {% include gallery.html %}
+
+<br/>
+
+_Photos by [Jacqueline Vu](https://www.jaxvu.com)_
