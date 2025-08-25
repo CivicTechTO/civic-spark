@@ -33,6 +33,12 @@
   {% endif %}
   <script defer src="https://umami.dgt.ca/script.js" data-website-id="b2795a2e-50ef-4243-90f8-9adab9a467e3"></script>
   {{ site.head }}
+  {% if page.lightbox %}
+    <link rel="stylesheet" href="{{ '/assets/styles/lightbox.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/styles/baguetteBox.min.css' | relative_url }}">
+    <script src="{{ '/assets/scripts/baguetteBox.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/scripts/lightbox.js' | relative_url }}"></script>
+  {% endif %}
 </head>
 <body>
  
