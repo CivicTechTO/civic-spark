@@ -82,3 +82,9 @@ plugins:
 #   - vendor/ruby/
 
 permalink: pretty
+
+# Picture Tag settings
+picture:
+  source: "assets/documentation"
+  output: "assets/g"
+  ignore_missing_images: false
