@@ -1,0 +1,11 @@
+<div class="gallery">
+  {% assign docs = site.static_files 
+  | where_exp: "file", "file.path contains '/assets/documentation/'" 
+  | sort: "name" | reverse %}
+
+  {% for image in docs %}
+      <a href="{{ image.path | relative_url }}">
+        {% picture gallery {{ image.path | split: '/' | last }} alt="Documentation image" %}
+      </a>
+  {% endfor %}
+</div>

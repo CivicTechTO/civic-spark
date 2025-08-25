@@ -58,6 +58,9 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll_picture_tag
+  - jekyll-loading-lazy
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -79,3 +82,9 @@ plugins:
 #   - vendor/ruby/
 
 permalink: pretty
+
+# Picture Tag settings
+picture:
+  source: "assets/documentation"
+  output: "assets/g"
+  ignore_missing_images: false

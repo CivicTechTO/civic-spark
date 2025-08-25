@@ -1,0 +1,23 @@
+presets:
+  default:
+    formats: [webp, original]
+    widths: [400, 800, 1200]
+    sizes:
+      mobile: 100vw
+      default: 800px
+    attributes:
+      loading: lazy
+      decoding: async
+
+  gallery:
+    formats: [webp, original]
+    widths: [150, 300, 600, 900]
+    sizes:
+      mobile: 100vw
+      default: 600px
+    attributes:
+      loading: lazy
+      class: gallery-img
+
+media_queries:
+  mobile: "(max-width: 600px)"
