@@ -22,6 +22,16 @@ Navigate to the project directory and install the required gems:
 bundle install
 ```
 
+Additional System Dependency: `libvips` `jekyll_picture_tag` depends on `libvips` for image processing. You’ll need to install it before running Jekyll locally.
+
+If using **macOS**, you can get libvips from [homebrew](https://brew.sh)
+
+```sh
+brew install vips
+```
+
+For **Windows** or otherwise, please resolve and update the readme with your method.
+
 3. **Run the Local Server**
 
 Start a local development server:
@@ -35,3 +45,13 @@ Or use [incremental regeneration](https://jekyllrb.com/docs/configuration/increm
 ```sh
 bundle exec jekyll serve  --incremental
 ```
+
+---
+
+## Image Gallery and Lightbox
+
+The documentation page has been configure with jekyll_picture_tag for responsive, lazy-loaded documentation images, and BaguetteBox.js for lightbox navigation.
+
+### Adding Documentation Images
+
+Place images in: `assets/documentation/` They will automatically appear in the gallery on the wrap-up page (wrapup.md). Filenames are sorted reverse alphabetically. See the include: [gallery.html](_includes/gallery.html) for the configuration.
