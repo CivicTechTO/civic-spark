@@ -21,3 +21,7 @@ Highlights are now available. More photos will be added soon!
 <br/>
 
 _Photos by [Jacqueline Vu](https://www.jaxvu.com)_
+
+### Kind Words from Civic Spark attendees
+
+{% include testimonials.html %}

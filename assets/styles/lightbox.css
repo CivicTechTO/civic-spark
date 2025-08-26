@@ -11,3 +11,20 @@
   border-radius: var(--pico-border-radius);
   cursor: pointer;
 }
+
+.testimonials {
+  background-color: var(--cust-yellow-light);
+  margin: calc(-1 * var(--pico-spacing)) calc(-1 * var(--pico-spacing))
+    var(--pico-spacing) calc(-1 * var(--pico-spacing));
+  padding: var(--pico-spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--pico-spacing);
+  margin-top: var(--pico-spacing);
+}
+
+.linkedin-embed iframe {
+  border-radius: 6px;
+  width: 100%;
+  max-width: 100%;
+}

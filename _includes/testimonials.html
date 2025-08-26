@@ -1,0 +1,13 @@
+<div class="testimonials">
+  {% for urn in site.data.testimonials.linkedin_posts %}
+    <div class="linkedin-embed">
+      <iframe 
+        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:{{ urn }}"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen="">
+      </iframe>
+    </div>
+  {% endfor %}
+</div>
