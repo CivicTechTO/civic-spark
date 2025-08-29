@@ -9,4 +9,4 @@ permalink: /unconference/board
 
 The conference board is updated regularly while the unconference is in progress.
 
-<img class="boardimage" src="https://jordyarms.github.io/civic-spark-board/latest.jpg">
+<img class="boardimage" src="{{'assets/images/board/latest.jpg' | relative_url }}">
