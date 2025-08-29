@@ -1,11 +1,18 @@
+{% comment %}
+Usage:
+  {% include gallery.html day="day1" %}
+  {% include gallery.html day="day2" %}
+{% endcomment %}
+
 <div class="gallery">
-  {% assign docs = site.static_files 
-  | where_exp: "file", "file.path contains '/assets/documentation/'" 
-  | sort: "name" | reverse %}
+  {% assign folder = '/assets/documentation/' | append: include.day | append: '/' %}
+  {% assign docs = site.static_files | where_exp: "file", "file.path contains folder" | sort: "name" %}
 
   {% for image in docs %}
-      <a href="{{ image.path | relative_url }}">
-        {% picture gallery {{ image.path | split: '/' | last }} alt="Documentation image" %}
-      </a>
+    {% assign relative_path = image.path | remove_first: '/assets/documentation/' %}
+    <a href="{{ image.path | relative_url }}" data-lightbox="Civic Spark Photos">
+      {% picture gallery {{ relative_path }} alt="{{ include.day | capitalize }} image" %}
+    </a>
   {% endfor %}
 </div>
+<br/>

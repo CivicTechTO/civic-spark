@@ -9,7 +9,6 @@ location: "[[Second Stage]]"
 format: Panel
 performer:
   - "[[Anibal Davila]]"
-  - "[[Leah Houston]]"
   - "[[Alexandra Lambropoulos]]"
   - "[[Fateha Hossain]]"
   - "[[Julia Girmenia]]"
@@ -17,4 +16,5 @@ performer:
 published: true
 moderator: "[[Emily Macrae]]"
 ---
+
 Toronto has an amazing wealth of community-driven organizations, working on-the street (sometimes literally) to connect neighbours, create opportunities, and to bring joy. In this session we’ll explore their lessons, challenges, advice and next steps.

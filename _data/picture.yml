@@ -1,7 +1,7 @@
 presets:
   default:
-    formats: [webp, original]
-    widths: [400, 800, 1200]
+    formats: [webp]
+    widths: [400, 800]
     sizes:
       mobile: 100vw
       default: 800px
@@ -10,11 +10,21 @@ presets:
       decoding: async
 
   gallery:
-    formats: [webp, original]
-    widths: [150, 300, 600, 900]
+    formats: [webp]
+    widths: [150, 600]
     sizes:
       mobile: 100vw
       default: 600px
+    attributes:
+      loading: lazy
+      class: gallery-img
+
+  hero:
+    formats: [webp]
+    widths: [150, 600, 1200, 1800]
+    sizes:
+      mobile: 100vw
+      default: 1200px
     attributes:
       loading: lazy
       class: gallery-img
