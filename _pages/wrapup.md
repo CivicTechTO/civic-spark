@@ -32,7 +32,7 @@ permalink: /wrapup
 
 **To our attendees**, thank you for taking a chance on something new. For many of you, this was your first Civic Spark — it was ours too. Your presence, your openness, and your willingness to connect brought it to life.
 
-**To our speakers and facilitators** — thank you for your generosity, your thoughtfulness, and the sparks you lit. You gave us ideas to carry, questions to wrestle with, and permission to be honest. ([Visit the speakers list ](/conference/speakers/))
+**To our speakers and facilitators** — thank you for your generosity, your thoughtfulness, and the sparks you lit. You gave us ideas to carry, questions to wrestle with, and permission to be honest. ([Visit the speakers list](/conference/speakers/))
 
 - **To our conference speakers**, thank you for the care you brought to preparing your sessions and sharing your stories.
 - **To our unconference facilitators**, thank you for your vulnerability and courage in opening space for real dialogue.
@@ -57,11 +57,58 @@ Civic Spark was built by people who care, not just in theory, but in action.
 
 Organizing Team:
 
-- [Pending Confirmation of Listing]
+- Jordan Armstrong
+- Alex Chen
+- Brian Cheung
+- Ben Coleman
+- Khasir Hean
+- Ilya Kreynin
+- Jeff Maher
+- Sam McGarva
+- Gabe Sawhney
 
 Volunteers:
 
-- [Pending Confirmation of Listing]
+- Abhay
+- Alaa Abbas
+- Luke Andrews
+- Mahya Ashtiani
+- Maanas Arora
+- Giacomo Beltrami
+- Yael Boyd
+- Ankitha Cheerakathil
+- Clara Daia Hilgenberg Daru
+- Jojo El Masery
+- Thomas Fleming
+- Zizheng Gao
+- Harriet H
+- Tyna Hope
+- Elisabeth Huang
+- Rock Jethwa
+- Gurpreet Kaur
+- Samina Khaliq
+- Chatu Kodikara
+- Hanifa M
+- Ajay Matharoo
+- Mariyamu
+- Curtis McCord
+- Blessing Nnabugwu
+- Jamie Pantling
+- Akhil Puri
+- seeley quest
+- Sonal Ranjit
+- Hannah Rosen
+- Chandana Sahadevan
+- Megan Saxby
+- Parastou Shahsamandi
+- Luke Simcoe
+- Amiteshwar Singhq
+- Srini Sivasubramanian
+- Julia Solórzano
+- Naomi Toljagic
+- Zohal Usmani
+- Ben Windeler
+- Helena Yu
 
 <br id="next"/>
 
